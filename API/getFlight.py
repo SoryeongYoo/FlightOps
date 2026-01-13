@@ -4,6 +4,7 @@ from datetime import datetime
 import time
 from dotenv import load_dotenv
 import os
+import folium
 
 # .env 파일에서 환경 변수 로드
 load_dotenv()
@@ -197,7 +198,62 @@ def analyze_airport_traffic(airport_lat, airport_lon, radius_km=50):
 
 
 # 인천국제공항 좌표
-icn_traffic = analyze_airport_traffic(37.4602, 126.4407, radius_km=50) 
+# icn_traffic = analyze_airport_traffic(37.4602, 126.4407, radius_km=50) 
 
-print("\n가장 가까운 5대:")
-print(icn_traffic.sort_values('distance_km').head(5))
+# print("\n가장 가까운 5대:")
+# print(icn_traffic.sort_values('distance_km').head(5))
+
+
+def create_flight_map(df,center_lat=37.4602, center_lon=126.4406):
+    """
+    항공기 위치를 지도에 시각화
+
+    Args:
+        df: 항공기 데이터프레임
+        center_lat: 지도 중심 위도
+        center_lon: 지도 중심 경도
+    """
+
+    m=folium.Map(
+        location=[center_lat, center_lon],
+        zoom_start=6,
+        titles='OpenStree'
+    )
+
+    # 공항 마커
+    folium.Marker(
+        [center_lat, center_lon],
+        popup='인천국제공항',
+        icon=folium.Icon(color='red', icon='plane')
+    ).add_to(m)
+
+    # 항공기 마커
+    for idx, row in df.iterrows():
+        if row['on_ground']:
+            color='gray'
+            icon='stop'
+        else:
+            color='blue'
+            icon='plane'
+        
+        popup_text= f"""
+            <b>{row['callsign']}</b><br>
+            고도: {row['altitude_ft']} ft<br>
+            속도: {row['velocity_knots']} knots<br>
+            방향: {row['heading']}°
+        """
+        # 
+        folium.Marker(
+            location=[row['latitude'], row['longtitude']],
+            popup=popup_text,
+            icon=folium.Icon(color=color, icon=icon, prefix='fa')
+        ).add_to(m)
+    
+    # 지도를 HTML 파일로 저장
+    m.save('korean_flights.html')
+    print("지도 저장 완료: korean_flights.html")
+
+    return m
+
+korean_df=get_korean_flights()
+create_flight_map(korean_df)

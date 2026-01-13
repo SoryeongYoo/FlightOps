@@ -1,0 +1,2914 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_3cefadb2ef9c4a77bb3321dea16138f2 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_3cefadb2ef9c4a77bb3321dea16138f2" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_3cefadb2ef9c4a77bb3321dea16138f2 = L.map(
+                "map_3cefadb2ef9c4a77bb3321dea16138f2",
+                {
+                    center: [37.4602, 126.4406],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+  "titles": "OpenStree",
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_7d12a77d445f3775724c3a2788f51fb8 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_7d12a77d445f3775724c3a2788f51fb8.addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var marker_72e7c95e5144df5bb09686311f45d8a0 = L.marker(
+                [37.4602, 126.4406],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_79ca2951bb3a6d09feddb5ded4678909 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7feb9f3a4767e7cde0f3f35d4e00522d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_18f3681f812cc0a4524a9511c8d39f95 = $(`<div id="html_18f3681f812cc0a4524a9511c8d39f95" style="width: 100.0%; height: 100.0%;">인천국제공항</div>`)[0];
+                popup_7feb9f3a4767e7cde0f3f35d4e00522d.setContent(html_18f3681f812cc0a4524a9511c8d39f95);
+            
+        
+
+        marker_72e7c95e5144df5bb09686311f45d8a0.bindPopup(popup_7feb9f3a4767e7cde0f3f35d4e00522d)
+        ;
+
+        
+    
+    
+                marker_72e7c95e5144df5bb09686311f45d8a0.setIcon(icon_79ca2951bb3a6d09feddb5ded4678909);
+            
+    
+            var marker_4952bdf945c3b0d733aac1ce2eab35b5 = L.marker(
+                [33.3384, 130.8195],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_07d97f8a8a09a4784ef61057722dadf3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_72c58763ddad65c72504a01225046294 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5a233f2ee282e2745680023a5a8eff2d = $(`<div id="html_5a233f2ee282e2745680023a5a8eff2d" style="width: 100.0%; height: 100.0%;">             <b>ANA274</b><br>             고도: 21800.0006976 ft<br>             속도: 430.8910128 knots<br>             방향: 122.1°         </div>`)[0];
+                popup_72c58763ddad65c72504a01225046294.setContent(html_5a233f2ee282e2745680023a5a8eff2d);
+            
+        
+
+        marker_4952bdf945c3b0d733aac1ce2eab35b5.bindPopup(popup_72c58763ddad65c72504a01225046294)
+        ;
+
+        
+    
+    
+                marker_4952bdf945c3b0d733aac1ce2eab35b5.setIcon(icon_07d97f8a8a09a4784ef61057722dadf3);
+            
+    
+            var marker_77fb46a5eedd2a6a14887a250a850696 = L.marker(
+                [37.428, 126.4498],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_d1c60e9c78e665c65882bfb86d581725 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8e1df5e93dcc1382e39f9b5a7e6e8102 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad71412fbeee5c4439e2acb7af6b18f0 = $(`<div id="html_ad71412fbeee5c4439e2acb7af6b18f0" style="width: 100.0%; height: 100.0%;">             <b>SIA606</b><br>             고도: 125.000004 ft<br>             속도: 120.4403264 knots<br>             방향: 324.46°         </div>`)[0];
+                popup_8e1df5e93dcc1382e39f9b5a7e6e8102.setContent(html_ad71412fbeee5c4439e2acb7af6b18f0);
+            
+        
+
+        marker_77fb46a5eedd2a6a14887a250a850696.bindPopup(popup_8e1df5e93dcc1382e39f9b5a7e6e8102)
+        ;
+
+        
+    
+    
+                marker_77fb46a5eedd2a6a14887a250a850696.setIcon(icon_d1c60e9c78e665c65882bfb86d581725);
+            
+    
+            var marker_a62716b9fb644c3ba2559e6fd979ee1a = L.marker(
+                [37.1825, 126.4136],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_b984feb242b61493c22e4f101f04eeeb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1a81001e9e82fb9bcad0e169a4659c72 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_57e008b6e125eefde542b53a8bedc437 = $(`<div id="html_57e008b6e125eefde542b53a8bedc437" style="width: 100.0%; height: 100.0%;">             <b>XAX507</b><br>             고도: 9775.0003128 ft<br>             속도: 399.84788799999995 knots<br>             방향: 160.11°         </div>`)[0];
+                popup_1a81001e9e82fb9bcad0e169a4659c72.setContent(html_57e008b6e125eefde542b53a8bedc437);
+            
+        
+
+        marker_a62716b9fb644c3ba2559e6fd979ee1a.bindPopup(popup_1a81001e9e82fb9bcad0e169a4659c72)
+        ;
+
+        
+    
+    
+                marker_a62716b9fb644c3ba2559e6fd979ee1a.setIcon(icon_b984feb242b61493c22e4f101f04eeeb);
+            
+    
+            var marker_12f57d1608f4dc7ce3dbdd27aaf7e5c3 = L.marker(
+                [36.7851, 126.9652],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_cd70ba36e2dec3cd032d6bd26eb8b4b6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50bbe4ee1acd1f1d57ec4fb305f9a52e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2f973b72610bb44601abc8ea6e44a36a = $(`<div id="html_2f973b72610bb44601abc8ea6e44a36a" style="width: 100.0%; height: 100.0%;">             <b>CSN339</b><br>             고도: 16975.0005432 ft<br>             속도: 346.1395888 knots<br>             방향: 1.66°         </div>`)[0];
+                popup_50bbe4ee1acd1f1d57ec4fb305f9a52e.setContent(html_2f973b72610bb44601abc8ea6e44a36a);
+            
+        
+
+        marker_12f57d1608f4dc7ce3dbdd27aaf7e5c3.bindPopup(popup_50bbe4ee1acd1f1d57ec4fb305f9a52e)
+        ;
+
+        
+    
+    
+                marker_12f57d1608f4dc7ce3dbdd27aaf7e5c3.setIcon(icon_cd70ba36e2dec3cd032d6bd26eb8b4b6);
+            
+    
+            var marker_00b8a03db7b20a2ea500ce95355d4c6b = L.marker(
+                [34.4709, 126.2208],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_9480b7a337d6e28f7b83e54f95cf7470 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_217d35915528d701c07137c69f21baf4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_cdaef0f6ce1ec8e65be76e88071f2664 = $(`<div id="html_cdaef0f6ce1ec8e65be76e88071f2664" style="width: 100.0%; height: 100.0%;">             <b>CSH824</b><br>             고도: 26000.000832 ft<br>             속도: 430.0746 knots<br>             방향: 201.55°         </div>`)[0];
+                popup_217d35915528d701c07137c69f21baf4.setContent(html_cdaef0f6ce1ec8e65be76e88071f2664);
+            
+        
+
+        marker_00b8a03db7b20a2ea500ce95355d4c6b.bindPopup(popup_217d35915528d701c07137c69f21baf4)
+        ;
+
+        
+    
+    
+                marker_00b8a03db7b20a2ea500ce95355d4c6b.setIcon(icon_9480b7a337d6e28f7b83e54f95cf7470);
+            
+    
+            var marker_d731f020d2fd77dcaf16f18de3e565ec = L.marker(
+                [37.3418, 126.3598],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_8def53cfcfeda1dc6954a236a8cbdd9d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eead8b6903872cff21bd79421ba5141a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_947bc0246f550b61bfbfbf3615a86f2b = $(`<div id="html_947bc0246f550b61bfbfbf3615a86f2b" style="width: 100.0%; height: 100.0%;">             <b>JNA045</b><br>             고도: 9025.0002888 ft<br>             속도: 316.5737824 knots<br>             방향: 160.82°         </div>`)[0];
+                popup_eead8b6903872cff21bd79421ba5141a.setContent(html_947bc0246f550b61bfbfbf3615a86f2b);
+            
+        
+
+        marker_d731f020d2fd77dcaf16f18de3e565ec.bindPopup(popup_eead8b6903872cff21bd79421ba5141a)
+        ;
+
+        
+    
+    
+                marker_d731f020d2fd77dcaf16f18de3e565ec.setIcon(icon_8def53cfcfeda1dc6954a236a8cbdd9d);
+            
+    
+            var marker_14c27aa18cd59c1908d7916fa2ab6c17 = L.marker(
+                [37.417, 126.9453],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_4318a8f1e94e33cd2a9dfd63b60b2c65 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3a8e2eece43c3c7783f0aebd6e459ffb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1f1fe58db037917c7d9b3e1dd029ef42 = $(`<div id="html_1f1fe58db037917c7d9b3e1dd029ef42" style="width: 100.0%; height: 100.0%;">             <b>AAR212</b><br>             고도: 15425.0004936 ft<br>             속도: 401.8111664 knots<br>             방향: 81.12°         </div>`)[0];
+                popup_3a8e2eece43c3c7783f0aebd6e459ffb.setContent(html_1f1fe58db037917c7d9b3e1dd029ef42);
+            
+        
+
+        marker_14c27aa18cd59c1908d7916fa2ab6c17.bindPopup(popup_3a8e2eece43c3c7783f0aebd6e459ffb)
+        ;
+
+        
+    
+    
+                marker_14c27aa18cd59c1908d7916fa2ab6c17.setIcon(icon_4318a8f1e94e33cd2a9dfd63b60b2c65);
+            
+    
+            var marker_6a0cc9ed1e9cdce81f28b64ba867ebd1 = L.marker(
+                [35.3913, 126.8938],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_76d5e3b7a6c739c9046fc217eca7a363 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_575bff8f2a2abde5fdcb5e4bbd36d36a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_df33d05ef8a4dca340a5ff0b11aa4122 = $(`<div id="html_df33d05ef8a4dca340a5ff0b11aa4122" style="width: 100.0%; height: 100.0%;">             <b>TWB730</b><br>             고도: 23000.000735999998 ft<br>             속도: 423.6988048 knots<br>             방향: 5.15°         </div>`)[0];
+                popup_575bff8f2a2abde5fdcb5e4bbd36d36a.setContent(html_df33d05ef8a4dca340a5ff0b11aa4122);
+            
+        
+
+        marker_6a0cc9ed1e9cdce81f28b64ba867ebd1.bindPopup(popup_575bff8f2a2abde5fdcb5e4bbd36d36a)
+        ;
+
+        
+    
+    
+                marker_6a0cc9ed1e9cdce81f28b64ba867ebd1.setIcon(icon_76d5e3b7a6c739c9046fc217eca7a363);
+            
+    
+            var marker_239dd9a0be743697a2a175a138e706a5 = L.marker(
+                [36.9793, 126.7319],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_4b974309edb1f4f1555433c5262652f0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f0b94fe2b8086f190ec6ffe547b9d2c1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_63c9280741aaeeffa6e84e743cfa360a = $(`<div id="html_63c9280741aaeeffa6e84e743cfa360a" style="width: 100.0%; height: 100.0%;">             <b>KAL472</b><br>             고도: 9050.0002896 ft<br>             속도: 207.01896 knots<br>             방향: 300.16°         </div>`)[0];
+                popup_f0b94fe2b8086f190ec6ffe547b9d2c1.setContent(html_63c9280741aaeeffa6e84e743cfa360a);
+            
+        
+
+        marker_239dd9a0be743697a2a175a138e706a5.bindPopup(popup_f0b94fe2b8086f190ec6ffe547b9d2c1)
+        ;
+
+        
+    
+    
+                marker_239dd9a0be743697a2a175a138e706a5.setIcon(icon_4b974309edb1f4f1555433c5262652f0);
+            
+    
+            var marker_a3e143553ee17312112c26d47115185a = L.marker(
+                [37.5577, 126.7997],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_9f97af77a8ace0f1a0145c121b83b24a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "stop",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5b3a2d4a6a243301c34e994d1308d191 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_465a2c5b2936081fe7659120d1aa9205 = $(`<div id="html_465a2c5b2936081fe7659120d1aa9205" style="width: 100.0%; height: 100.0%;">             <b>JJA136</b><br>             고도: nan ft<br>             속도: 8.008620800000001 knots<br>             방향: 225.0°         </div>`)[0];
+                popup_5b3a2d4a6a243301c34e994d1308d191.setContent(html_465a2c5b2936081fe7659120d1aa9205);
+            
+        
+
+        marker_a3e143553ee17312112c26d47115185a.bindPopup(popup_5b3a2d4a6a243301c34e994d1308d191)
+        ;
+
+        
+    
+    
+                marker_a3e143553ee17312112c26d47115185a.setIcon(icon_9f97af77a8ace0f1a0145c121b83b24a);
+            
+    
+            var marker_84b86594533141b34a1fd80c4e560a50 = L.marker(
+                [36.9149, 127.723],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_54f57aa4fc1a60e123bf524e79fae234 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_daf14950510c220bd83b0fbcb8a00c89 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2c31040efb9a83ba69774887e9a90efe = $(`<div id="html_2c31040efb9a83ba69774887e9a90efe" style="width: 100.0%; height: 100.0%;">             <b>TWB9210</b><br>             고도: 19425.0006216 ft<br>             속도: 306.25199200000003 knots<br>             방향: 327.4°         </div>`)[0];
+                popup_daf14950510c220bd83b0fbcb8a00c89.setContent(html_2c31040efb9a83ba69774887e9a90efe);
+            
+        
+
+        marker_84b86594533141b34a1fd80c4e560a50.bindPopup(popup_daf14950510c220bd83b0fbcb8a00c89)
+        ;
+
+        
+    
+    
+                marker_84b86594533141b34a1fd80c4e560a50.setIcon(icon_54f57aa4fc1a60e123bf524e79fae234);
+            
+    
+            var marker_409291808511ffd7bd312a80b83ee7ae = L.marker(
+                [34.8561, 126.8358],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_60f61953bf11208f66a78c35544d5ed8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_970cb81ef143aff5e9ac0681dfa99ad7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_167f8349d0d15199d614f9d6bb74b337 = $(`<div id="html_167f8349d0d15199d614f9d6bb74b337" style="width: 100.0%; height: 100.0%;">             <b>JJA140</b><br>             고도: 25000.0008 ft<br>             속도: 427.6836768 knots<br>             방향: 5.1°         </div>`)[0];
+                popup_970cb81ef143aff5e9ac0681dfa99ad7.setContent(html_167f8349d0d15199d614f9d6bb74b337);
+            
+        
+
+        marker_409291808511ffd7bd312a80b83ee7ae.bindPopup(popup_970cb81ef143aff5e9ac0681dfa99ad7)
+        ;
+
+        
+    
+    
+                marker_409291808511ffd7bd312a80b83ee7ae.setIcon(icon_60f61953bf11208f66a78c35544d5ed8);
+            
+    
+            var marker_420d9a3e358dece662eef5c9b699be2b = L.marker(
+                [33.59, 125.7382],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_33367709323aa164c2270d4f4352acb8 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ea3952a0e5efd0fe65b1889736938967 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2a36ca6805bc665e4cddc6778c4af58b = $(`<div id="html_2a36ca6805bc665e4cddc6778c4af58b" style="width: 100.0%; height: 100.0%;">             <b>CAL163</b><br>             고도: 32000.001024 ft<br>             속도: 445.8002656 knots<br>             방향: 190.73°         </div>`)[0];
+                popup_ea3952a0e5efd0fe65b1889736938967.setContent(html_2a36ca6805bc665e4cddc6778c4af58b);
+            
+        
+
+        marker_420d9a3e358dece662eef5c9b699be2b.bindPopup(popup_ea3952a0e5efd0fe65b1889736938967)
+        ;
+
+        
+    
+    
+                marker_420d9a3e358dece662eef5c9b699be2b.setIcon(icon_33367709323aa164c2270d4f4352acb8);
+            
+    
+            var marker_76941487e1c24f9e02ff8a9dfc76b696 = L.marker(
+                [37.5623, 126.7918],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_03624a1b7d77fa43bf2a78eed004f7aa = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "stop",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bce164b8ed2ceed875983cade78f5aa2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ea6a7fc194be9dac7c0c38473622f3e = $(`<div id="html_9ea6a7fc194be9dac7c0c38473622f3e" style="width: 100.0%; height: 100.0%;">             <b>TWB728</b><br>             고도: nan ft<br>             속도: 11.002134400000001 knots<br>             방향: 135.0°         </div>`)[0];
+                popup_bce164b8ed2ceed875983cade78f5aa2.setContent(html_9ea6a7fc194be9dac7c0c38473622f3e);
+            
+        
+
+        marker_76941487e1c24f9e02ff8a9dfc76b696.bindPopup(popup_bce164b8ed2ceed875983cade78f5aa2)
+        ;
+
+        
+    
+    
+                marker_76941487e1c24f9e02ff8a9dfc76b696.setIcon(icon_03624a1b7d77fa43bf2a78eed004f7aa);
+            
+    
+            var marker_349e46e53db766469983f0c893d469be = L.marker(
+                [37.4108, 126.4651],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_eb76220bd65f3be3f4fb398af0a02479 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_11bef6c35dda3d9f39e3af932894d55d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9b5c6974dbdca7a088e6faca1578ad49 = $(`<div id="html_9b5c6974dbdca7a088e6faca1578ad49" style="width: 100.0%; height: 100.0%;">             <b>CSN315</b><br>             고도: 550.0000176 ft<br>             속도: 130.43166399999998 knots<br>             방향: 324.36°         </div>`)[0];
+                popup_11bef6c35dda3d9f39e3af932894d55d.setContent(html_9b5c6974dbdca7a088e6faca1578ad49);
+            
+        
+
+        marker_349e46e53db766469983f0c893d469be.bindPopup(popup_11bef6c35dda3d9f39e3af932894d55d)
+        ;
+
+        
+    
+    
+                marker_349e46e53db766469983f0c893d469be.setIcon(icon_eb76220bd65f3be3f4fb398af0a02479);
+            
+    
+            var marker_05cb2eef8f75e31367e8a46c9f23c35e = L.marker(
+                [37.4837, 126.435],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_aa4ba1a9e6219bfc8c3bdb14a39d3e38 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5f664ff20f69f2b270b9b97693ffe9fd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eba5c491c8ec9803ba61d1f16fcfcdc1 = $(`<div id="html_eba5c491c8ec9803ba61d1f16fcfcdc1" style="width: 100.0%; height: 100.0%;">             <b>UNKNOWN</b><br>             고도: 575.0000183999999 ft<br>             속도: 157.04283360000002 knots<br>             방향: 324.59°         </div>`)[0];
+                popup_5f664ff20f69f2b270b9b97693ffe9fd.setContent(html_eba5c491c8ec9803ba61d1f16fcfcdc1);
+            
+        
+
+        marker_05cb2eef8f75e31367e8a46c9f23c35e.bindPopup(popup_5f664ff20f69f2b270b9b97693ffe9fd)
+        ;
+
+        
+    
+    
+                marker_05cb2eef8f75e31367e8a46c9f23c35e.setIcon(icon_aa4ba1a9e6219bfc8c3bdb14a39d3e38);
+            
+    
+            var marker_0cd623f4241763118d68a128477b9c7e = L.marker(
+                [35.7628, 126.7703],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_44e1620908d42c6cb4b27a9438fd41cc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a28db6c87bf73ad02f053ae6f1e54459 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b489c038f7c9492bdbd7b801943d6bbe = $(`<div id="html_b489c038f7c9492bdbd7b801943d6bbe" style="width: 100.0%; height: 100.0%;">             <b>AAR8997</b><br>             고도: 22000.000704000002 ft<br>             속도: 436.7419712 knots<br>             방향: 185.12°         </div>`)[0];
+                popup_a28db6c87bf73ad02f053ae6f1e54459.setContent(html_b489c038f7c9492bdbd7b801943d6bbe);
+            
+        
+
+        marker_0cd623f4241763118d68a128477b9c7e.bindPopup(popup_a28db6c87bf73ad02f053ae6f1e54459)
+        ;
+
+        
+    
+    
+                marker_0cd623f4241763118d68a128477b9c7e.setIcon(icon_44e1620908d42c6cb4b27a9438fd41cc);
+            
+    
+            var marker_aef7ab0ead335ceb5b540d50071910b3 = L.marker(
+                [36.216, 129.3281],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_8799f0538957adac1ff9eabcbd5b63a0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cd4c5f21b8ae5e552b1098c9571f71af = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e58fdbb5af59e6955b4104851dda48d3 = $(`<div id="html_e58fdbb5af59e6955b4104851dda48d3" style="width: 100.0%; height: 100.0%;">             <b>JJA1514</b><br>             고도: 36000.001152 ft<br>             속도: 349.7356928 knots<br>             방향: 296.13°         </div>`)[0];
+                popup_cd4c5f21b8ae5e552b1098c9571f71af.setContent(html_e58fdbb5af59e6955b4104851dda48d3);
+            
+        
+
+        marker_aef7ab0ead335ceb5b540d50071910b3.bindPopup(popup_cd4c5f21b8ae5e552b1098c9571f71af)
+        ;
+
+        
+    
+    
+                marker_aef7ab0ead335ceb5b540d50071910b3.setIcon(icon_8799f0538957adac1ff9eabcbd5b63a0);
+            
+    
+            var marker_42624c4fc924eb57aa379b54022bb9d2 = L.marker(
+                [37.4896, 126.8799],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_1a4d94203a9e1d94a66e8c02f7306c5e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ada0c536ca232a214942ff3dce8ac419 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3f10ca3690fecf8857243b3fc09dc20e = $(`<div id="html_3f10ca3690fecf8857243b3fc09dc20e" style="width: 100.0%; height: 100.0%;">             <b>AAR8982</b><br>             고도: 1500.0000479999999 ft<br>             속도: 127.98242560000001 knots<br>             방향: 314.68°         </div>`)[0];
+                popup_ada0c536ca232a214942ff3dce8ac419.setContent(html_3f10ca3690fecf8857243b3fc09dc20e);
+            
+        
+
+        marker_42624c4fc924eb57aa379b54022bb9d2.bindPopup(popup_ada0c536ca232a214942ff3dce8ac419)
+        ;
+
+        
+    
+    
+                marker_42624c4fc924eb57aa379b54022bb9d2.setIcon(icon_1a4d94203a9e1d94a66e8c02f7306c5e);
+            
+    
+            var marker_bf33cafed5d5d26ece989329070c5a69 = L.marker(
+                [33.4497, 131.8843],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_ac031303c7e8bcb6156e30bbb4e0fac6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_959ad24cdc661816daf0e54f6a908629 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_999ff126997d46e0c5a7787155196923 = $(`<div id="html_999ff126997d46e0c5a7787155196923" style="width: 100.0%; height: 100.0%;">             <b>SJX851</b><br>             고도: 38000.001216 ft<br>             속도: 337.5283776 knots<br>             방향: 213.64°         </div>`)[0];
+                popup_959ad24cdc661816daf0e54f6a908629.setContent(html_999ff126997d46e0c5a7787155196923);
+            
+        
+
+        marker_bf33cafed5d5d26ece989329070c5a69.bindPopup(popup_959ad24cdc661816daf0e54f6a908629)
+        ;
+
+        
+    
+    
+                marker_bf33cafed5d5d26ece989329070c5a69.setIcon(icon_ac031303c7e8bcb6156e30bbb4e0fac6);
+            
+    
+            var marker_4ec06c9138018be02bf8b00f687f3e03 = L.marker(
+                [33.6971, 126.1825],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_27137390f2622b3442ca8928a32c4626 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b83bef5ed51db772248b8e4137b0d97e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b7ae8085e239205d348756c0e64a7d5c = $(`<div id="html_b7ae8085e239205d348756c0e64a7d5c" style="width: 100.0%; height: 100.0%;">             <b>TWB045</b><br>             고도: 34000.001088000005 ft<br>             속도: 404.9796256 knots<br>             방향: 191.39°         </div>`)[0];
+                popup_b83bef5ed51db772248b8e4137b0d97e.setContent(html_b7ae8085e239205d348756c0e64a7d5c);
+            
+        
+
+        marker_4ec06c9138018be02bf8b00f687f3e03.bindPopup(popup_b83bef5ed51db772248b8e4137b0d97e)
+        ;
+
+        
+    
+    
+                marker_4ec06c9138018be02bf8b00f687f3e03.setIcon(icon_27137390f2622b3442ca8928a32c4626);
+            
+    
+            var marker_98ebbe3cbc8836b0c343503a8cfa1c05 = L.marker(
+                [36.2261, 126.5676],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_48b8b77f48393191738159289953e59f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c0988da56a8c01fe11bfb0e7c58dc66d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2e1e036a59ca021c60aec13ef4eff30f = $(`<div id="html_2e1e036a59ca021c60aec13ef4eff30f" style="width: 100.0%; height: 100.0%;">             <b>ESR593</b><br>             고도: 29475.000943199997 ft<br>             속도: 422.590816 knots<br>             방향: 192.85°         </div>`)[0];
+                popup_c0988da56a8c01fe11bfb0e7c58dc66d.setContent(html_2e1e036a59ca021c60aec13ef4eff30f);
+            
+        
+
+        marker_98ebbe3cbc8836b0c343503a8cfa1c05.bindPopup(popup_c0988da56a8c01fe11bfb0e7c58dc66d)
+        ;
+
+        
+    
+    
+                marker_98ebbe3cbc8836b0c343503a8cfa1c05.setIcon(icon_48b8b77f48393191738159289953e59f);
+            
+    
+            var marker_0c62c2fef04c298cb6281c2300ff05c7 = L.marker(
+                [37.4718, 126.4167],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_de19b3df5e349762c31c0b0d0218d855 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_54c2ba8abb8be1a7c9a0ea007b33947c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_163847b2161fb47a3f9cca279a918738 = $(`<div id="html_163847b2161fb47a3f9cca279a918738" style="width: 100.0%; height: 100.0%;">             <b>UNKNOWN</b><br>             고도: 725.0000232 ft<br>             속도: 158.4423984 knots<br>             방향: 324.5°         </div>`)[0];
+                popup_54c2ba8abb8be1a7c9a0ea007b33947c.setContent(html_163847b2161fb47a3f9cca279a918738);
+            
+        
+
+        marker_0c62c2fef04c298cb6281c2300ff05c7.bindPopup(popup_54c2ba8abb8be1a7c9a0ea007b33947c)
+        ;
+
+        
+    
+    
+                marker_0c62c2fef04c298cb6281c2300ff05c7.setIcon(icon_de19b3df5e349762c31c0b0d0218d855);
+            
+    
+            var marker_d3c63cb8dff2224c347e58fe72f8ad70 = L.marker(
+                [36.9143, 127.7216],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_0d9fc3936c5855045b0a908cf0f799ef = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1f2ac3ca865316a2602c0e24c8bec01 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_efe2b407594825fde7a03b59524ab242 = $(`<div id="html_efe2b407594825fde7a03b59524ab242" style="width: 100.0%; height: 100.0%;">             <b>TWB208</b><br>             고도: 19350.0006192 ft<br>             속도: 299.6623744 knots<br>             방향: 327.95°         </div>`)[0];
+                popup_d1f2ac3ca865316a2602c0e24c8bec01.setContent(html_efe2b407594825fde7a03b59524ab242);
+            
+        
+
+        marker_d3c63cb8dff2224c347e58fe72f8ad70.bindPopup(popup_d1f2ac3ca865316a2602c0e24c8bec01)
+        ;
+
+        
+    
+    
+                marker_d3c63cb8dff2224c347e58fe72f8ad70.setIcon(icon_0d9fc3936c5855045b0a908cf0f799ef);
+            
+    
+            var marker_675b2de33cd56c7d9b48f71140482b7e = L.marker(
+                [37.5564, 126.8006],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_fd32a59793c72b6b6602bb7e1b8527ca = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "stop",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4d57095352ceaa72ac1ddf254c370f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9329d62d2be1be2638eb0fdcf68872be = $(`<div id="html_9329d62d2be1be2638eb0fdcf68872be" style="width: 100.0%; height: 100.0%;">             <b>KAL1834</b><br>             고도: nan ft<br>             속도: nan knots<br>             방향: 225.0°         </div>`)[0];
+                popup_f4d57095352ceaa72ac1ddf254c370f1.setContent(html_9329d62d2be1be2638eb0fdcf68872be);
+            
+        
+
+        marker_675b2de33cd56c7d9b48f71140482b7e.bindPopup(popup_f4d57095352ceaa72ac1ddf254c370f1)
+        ;
+
+        
+    
+    
+                marker_675b2de33cd56c7d9b48f71140482b7e.setIcon(icon_fd32a59793c72b6b6602bb7e1b8527ca);
+            
+    
+            var marker_0ee64f11ab6af93bff096f308f9e9ab2 = L.marker(
+                [34.2463, 126.5633],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_6102b8379762c705d38d14481da6fe55 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e32d596a3ed58505e0b550be9bc86b50 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b9398b1f95f5686b3850cbc3dcad3933 = $(`<div id="html_b9398b1f95f5686b3850cbc3dcad3933" style="width: 100.0%; height: 100.0%;">             <b>JJA2605</b><br>             고도: 34000.001088000005 ft<br>             속도: 444.01193279999995 knots<br>             방향: 179.61°         </div>`)[0];
+                popup_e32d596a3ed58505e0b550be9bc86b50.setContent(html_b9398b1f95f5686b3850cbc3dcad3933);
+            
+        
+
+        marker_0ee64f11ab6af93bff096f308f9e9ab2.bindPopup(popup_e32d596a3ed58505e0b550be9bc86b50)
+        ;
+
+        
+    
+    
+                marker_0ee64f11ab6af93bff096f308f9e9ab2.setIcon(icon_6102b8379762c705d38d14481da6fe55);
+            
+    
+            var marker_830363df5c8e665e1dd1470660a6f682 = L.marker(
+                [35.0009, 126.542],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_fea30ed7f4a3d28d18cbde01110177e9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6d2d8a035b89ca30e7265949a11e9a5d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6473e90c404a3b9d5608f579c01eb205 = $(`<div id="html_6473e90c404a3b9d5608f579c01eb205" style="width: 100.0%; height: 100.0%;">             <b>EOK523</b><br>             고도: 32675.0010456 ft<br>             속도: 422.57137759999995 knots<br>             방향: 195.09°         </div>`)[0];
+                popup_6d2d8a035b89ca30e7265949a11e9a5d.setContent(html_6473e90c404a3b9d5608f579c01eb205);
+            
+        
+
+        marker_830363df5c8e665e1dd1470660a6f682.bindPopup(popup_6d2d8a035b89ca30e7265949a11e9a5d)
+        ;
+
+        
+    
+    
+                marker_830363df5c8e665e1dd1470660a6f682.setIcon(icon_fea30ed7f4a3d28d18cbde01110177e9);
+            
+    
+            var marker_9e7622bc66fb8bab8468cc26b0c9dd12 = L.marker(
+                [36.2932, 128.9232],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_e23a0ec4e4442c2d26eedf5934935ccc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5ee95ec90197dee39059b9299e654d3e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0bb6148e96b8ea87dbd5980eab735be4 = $(`<div id="html_0bb6148e96b8ea87dbd5980eab735be4" style="width: 100.0%; height: 100.0%;">             <b>EOK305</b><br>             고도: 28100.000899199997 ft<br>             속도: 320.150448 knots<br>             방향: 305.08°         </div>`)[0];
+                popup_5ee95ec90197dee39059b9299e654d3e.setContent(html_0bb6148e96b8ea87dbd5980eab735be4);
+            
+        
+
+        marker_9e7622bc66fb8bab8468cc26b0c9dd12.bindPopup(popup_5ee95ec90197dee39059b9299e654d3e)
+        ;
+
+        
+    
+    
+                marker_9e7622bc66fb8bab8468cc26b0c9dd12.setIcon(icon_e23a0ec4e4442c2d26eedf5934935ccc);
+            
+    
+            var marker_0bfdca04804573f42d725cf86843c239 = L.marker(
+                [37.3385, 124.3344],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_37f929b1b02936fc16bb76c21cf5de9f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_64fd532aef0194393624c757d6b7e3e6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be05c8c3ce08ea033b629c9e5cc574d6 = $(`<div id="html_be05c8c3ce08ea033b629c9e5cc574d6" style="width: 100.0%; height: 100.0%;">             <b>CES2922</b><br>             고도: 32075.001026399997 ft<br>             속도: 367.9300352 knots<br>             방향: 237.99°         </div>`)[0];
+                popup_64fd532aef0194393624c757d6b7e3e6.setContent(html_be05c8c3ce08ea033b629c9e5cc574d6);
+            
+        
+
+        marker_0bfdca04804573f42d725cf86843c239.bindPopup(popup_64fd532aef0194393624c757d6b7e3e6)
+        ;
+
+        
+    
+    
+                marker_0bfdca04804573f42d725cf86843c239.setIcon(icon_37f929b1b02936fc16bb76c21cf5de9f);
+            
+    
+            var marker_08bd4154c82a4262034e0c2bcffb2b38 = L.marker(
+                [35.0959, 126.0824],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_341e5f22bf8e89078633e79cfa758fd7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a3b8ba0538196342e6c65522aaa326ca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_abfb3d77dab771f44561e3cf939700a9 = $(`<div id="html_abfb3d77dab771f44561e3cf939700a9" style="width: 100.0%; height: 100.0%;">             <b>ESR561</b><br>             고도: 34000.001088000005 ft<br>             속도: 420.6664144 knots<br>             방향: 190.96°         </div>`)[0];
+                popup_a3b8ba0538196342e6c65522aaa326ca.setContent(html_abfb3d77dab771f44561e3cf939700a9);
+            
+        
+
+        marker_08bd4154c82a4262034e0c2bcffb2b38.bindPopup(popup_a3b8ba0538196342e6c65522aaa326ca)
+        ;
+
+        
+    
+    
+                marker_08bd4154c82a4262034e0c2bcffb2b38.setIcon(icon_341e5f22bf8e89078633e79cfa758fd7);
+            
+    
+            var marker_ba6f8a029cd4539189b29a1f9559aab0 = L.marker(
+                [33.3961, 125.7452],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_35d3ea4e02fb7fa9d8bcf1998b90b6cb = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_015a4fa9a119299ec8111ef015eb4a41 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c5f0e97eeffc596beef2f909826dd0c3 = $(`<div id="html_c5f0e97eeffc596beef2f909826dd0c3" style="width: 100.0%; height: 100.0%;">             <b>TWB033</b><br>             고도: 38025.0012168 ft<br>             속도: 422.2409248 knots<br>             방향: 191.34°         </div>`)[0];
+                popup_015a4fa9a119299ec8111ef015eb4a41.setContent(html_c5f0e97eeffc596beef2f909826dd0c3);
+            
+        
+
+        marker_ba6f8a029cd4539189b29a1f9559aab0.bindPopup(popup_015a4fa9a119299ec8111ef015eb4a41)
+        ;
+
+        
+    
+    
+                marker_ba6f8a029cd4539189b29a1f9559aab0.setIcon(icon_35d3ea4e02fb7fa9d8bcf1998b90b6cb);
+            
+    
+            var marker_2138f44edd81c35fb3010ef360be073c = L.marker(
+                [34.7199, 126.5819],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_935657a39b59e785f33d8b7f0c4704b5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef60487cf0cd8b6fa1485dc518d5254e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ce3a2408a6277237c69f6e7101fd4a44 = $(`<div id="html_ce3a2408a6277237c69f6e7101fd4a44" style="width: 100.0%; height: 100.0%;">             <b>KAL625</b><br>             고도: 33500.001072 ft<br>             속도: 444.0508096 knots<br>             방향: 180.9°         </div>`)[0];
+                popup_ef60487cf0cd8b6fa1485dc518d5254e.setContent(html_ce3a2408a6277237c69f6e7101fd4a44);
+            
+        
+
+        marker_2138f44edd81c35fb3010ef360be073c.bindPopup(popup_ef60487cf0cd8b6fa1485dc518d5254e)
+        ;
+
+        
+    
+    
+                marker_2138f44edd81c35fb3010ef360be073c.setIcon(icon_935657a39b59e785f33d8b7f0c4704b5);
+            
+    
+            var marker_2ac1b960dcd03510de05db31d1fcd50b = L.marker(
+                [36.811, 126.4769],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_aa5c421ffb23a392a25cbac5ed11ba5b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fbf8ba096392b3fa9373f285ce03df4d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e681cb4fd1ba258dc0b442b36ed83fc1 = $(`<div id="html_e681cb4fd1ba258dc0b442b36ed83fc1" style="width: 100.0%; height: 100.0%;">             <b>AAR357</b><br>             고도: 20675.0006616 ft<br>             속도: 406.72908160000003 knots<br>             방향: 193.8°         </div>`)[0];
+                popup_fbf8ba096392b3fa9373f285ce03df4d.setContent(html_e681cb4fd1ba258dc0b442b36ed83fc1);
+            
+        
+
+        marker_2ac1b960dcd03510de05db31d1fcd50b.bindPopup(popup_fbf8ba096392b3fa9373f285ce03df4d)
+        ;
+
+        
+    
+    
+                marker_2ac1b960dcd03510de05db31d1fcd50b.setIcon(icon_aa5c421ffb23a392a25cbac5ed11ba5b);
+            
+    
+            var marker_c7edec0b6d3a37fa11ae289626bce1b3 = L.marker(
+                [37.3544, 127.0486],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_88c846d61e7b00a96289d8ad08462e37 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e444cbe38db11847f8cc2c55f0427d91 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_70c581a98686cca29bc448f35c6b3c71 = $(`<div id="html_70c581a98686cca29bc448f35c6b3c71" style="width: 100.0%; height: 100.0%;">             <b>KAL1330</b><br>             고도: 5400.000172800001 ft<br>             속도: 127.28264320000001 knots<br>             방향: 315.64°         </div>`)[0];
+                popup_e444cbe38db11847f8cc2c55f0427d91.setContent(html_70c581a98686cca29bc448f35c6b3c71);
+            
+        
+
+        marker_c7edec0b6d3a37fa11ae289626bce1b3.bindPopup(popup_e444cbe38db11847f8cc2c55f0427d91)
+        ;
+
+        
+    
+    
+                marker_c7edec0b6d3a37fa11ae289626bce1b3.setIcon(icon_88c846d61e7b00a96289d8ad08462e37);
+            
+    
+            var marker_3269bcd67d4f78e0f557af8491c5fd73 = L.marker(
+                [37.4225, 126.964],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_e3e0817b91dc259632f5866b6e03f8bd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25b13f08f6ecadfd7e7e82b12d0a41ac = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bf4a59ef590e30aa9a215727c8507148 = $(`<div id="html_bf4a59ef590e30aa9a215727c8507148" style="width: 100.0%; height: 100.0%;">             <b>KAL2120</b><br>             고도: 3600.0001152 ft<br>             속도: 132.2394352 knots<br>             방향: 315.31°         </div>`)[0];
+                popup_25b13f08f6ecadfd7e7e82b12d0a41ac.setContent(html_bf4a59ef590e30aa9a215727c8507148);
+            
+        
+
+        marker_3269bcd67d4f78e0f557af8491c5fd73.bindPopup(popup_25b13f08f6ecadfd7e7e82b12d0a41ac)
+        ;
+
+        
+    
+    
+                marker_3269bcd67d4f78e0f557af8491c5fd73.setIcon(icon_e3e0817b91dc259632f5866b6e03f8bd);
+            
+    
+            var marker_83e173f5065fd2a2d5eedc09538885bf = L.marker(
+                [37.5576, 126.8014],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_d7aa4964b99c932e3b012fb6350d87bc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "stop",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_29303e3f0da78162f3e26b1ef9cdf6b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_71b06e902ed5c01c58e3ff497da4fe8f = $(`<div id="html_71b06e902ed5c01c58e3ff497da4fe8f" style="width: 100.0%; height: 100.0%;">             <b>TWB726</b><br>             고도: nan ft<br>             속도: 2.0021552000000002 knots<br>             방향: 315.0°         </div>`)[0];
+                popup_29303e3f0da78162f3e26b1ef9cdf6b7.setContent(html_71b06e902ed5c01c58e3ff497da4fe8f);
+            
+        
+
+        marker_83e173f5065fd2a2d5eedc09538885bf.bindPopup(popup_29303e3f0da78162f3e26b1ef9cdf6b7)
+        ;
+
+        
+    
+    
+                marker_83e173f5065fd2a2d5eedc09538885bf.setIcon(icon_d7aa4964b99c932e3b012fb6350d87bc);
+            
+    
+            var marker_4a53e6eba793aacb91caf3b3f9fb3351 = L.marker(
+                [35.412, 128.4986],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_dfc4e700c0fe429d2b8ba0b17c120b3d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5d9f3a2e5097dd622a0122f9c82b50e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3b2dfabf9b9d072de35a830ee863693f = $(`<div id="html_3b2dfabf9b9d072de35a830ee863693f" style="width: 100.0%; height: 100.0%;">             <b>TWB513</b><br>             고도: 31000.000991999997 ft<br>             속도: 478.4373392 knots<br>             방향: 146.51°         </div>`)[0];
+                popup_e5d9f3a2e5097dd622a0122f9c82b50e.setContent(html_3b2dfabf9b9d072de35a830ee863693f);
+            
+        
+
+        marker_4a53e6eba793aacb91caf3b3f9fb3351.bindPopup(popup_e5d9f3a2e5097dd622a0122f9c82b50e)
+        ;
+
+        
+    
+    
+                marker_4a53e6eba793aacb91caf3b3f9fb3351.setIcon(icon_dfc4e700c0fe429d2b8ba0b17c120b3d);
+            
+    
+            var marker_e19ee815b3c8b12198c601bc7e0bcb81 = L.marker(
+                [35.4049, 131.7303],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_c4a383f8878f0d72fca116ab48047900 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_55f871f54c5567a217de896992fd8795 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2917c915c762da045b4ef055a2d84ea3 = $(`<div id="html_2917c915c762da045b4ef055a2d84ea3" style="width: 100.0%; height: 100.0%;">             <b>KAL2132</b><br>             고도: 29825.0009544 ft<br>             속도: 351.5240256 knots<br>             방향: 263.14°         </div>`)[0];
+                popup_55f871f54c5567a217de896992fd8795.setContent(html_2917c915c762da045b4ef055a2d84ea3);
+            
+        
+
+        marker_e19ee815b3c8b12198c601bc7e0bcb81.bindPopup(popup_55f871f54c5567a217de896992fd8795)
+        ;
+
+        
+    
+    
+                marker_e19ee815b3c8b12198c601bc7e0bcb81.setIcon(icon_c4a383f8878f0d72fca116ab48047900);
+            
+    
+            var marker_1c581a2a16e3c541a65b241797cea67e = L.marker(
+                [34.3256, 126.6365],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_5997733327db30a3bf2bffc6a822217a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a84be94bf717c34cad446e38d163b130 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7cea48d4735cd0e06140d4754fa82bac = $(`<div id="html_7cea48d4735cd0e06140d4754fa82bac" style="width: 100.0%; height: 100.0%;">             <b>ESR227</b><br>             고도: 14075.0004504 ft<br>             속도: 361.4376096 knots<br>             방향: 177.15°         </div>`)[0];
+                popup_a84be94bf717c34cad446e38d163b130.setContent(html_7cea48d4735cd0e06140d4754fa82bac);
+            
+        
+
+        marker_1c581a2a16e3c541a65b241797cea67e.bindPopup(popup_a84be94bf717c34cad446e38d163b130)
+        ;
+
+        
+    
+    
+                marker_1c581a2a16e3c541a65b241797cea67e.setIcon(icon_5997733327db30a3bf2bffc6a822217a);
+            
+    
+            var marker_fbc1494ac1e013a53ab95bbac0f2bfdc = L.marker(
+                [35.5287, 126.312],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_4228b9e135e052c2c50810167162ce69 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a589bc3246a1fe08393954baff497735 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ad66cde8faeb4c5e5931c17f7e69ffda = $(`<div id="html_ad66cde8faeb4c5e5931c17f7e69ffda" style="width: 100.0%; height: 100.0%;">             <b>KAL659</b><br>             고도: 31650.0010128 ft<br>             속도: 472.7030112 knots<br>             방향: 192.21°         </div>`)[0];
+                popup_a589bc3246a1fe08393954baff497735.setContent(html_ad66cde8faeb4c5e5931c17f7e69ffda);
+            
+        
+
+        marker_fbc1494ac1e013a53ab95bbac0f2bfdc.bindPopup(popup_a589bc3246a1fe08393954baff497735)
+        ;
+
+        
+    
+    
+                marker_fbc1494ac1e013a53ab95bbac0f2bfdc.setIcon(icon_4228b9e135e052c2c50810167162ce69);
+            
+    
+            var marker_0d737410167bebf6a130aec32c9b64e7 = L.marker(
+                [34.2522, 126.7708],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_c21d3bcb5a0d1c80c9f7d11cc58ff661 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d679bb458adb2b7f044c3c6033aa03d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_2b9fb56e9d0624992e4802eb2020e080 = $(`<div id="html_2b9fb56e9d0624992e4802eb2020e080" style="width: 100.0%; height: 100.0%;">             <b>EOK514</b><br>             고도: 35000.00112 ft<br>             속도: 461.9146992 knots<br>             방향: 5.22°         </div>`)[0];
+                popup_4d679bb458adb2b7f044c3c6033aa03d.setContent(html_2b9fb56e9d0624992e4802eb2020e080);
+            
+        
+
+        marker_0d737410167bebf6a130aec32c9b64e7.bindPopup(popup_4d679bb458adb2b7f044c3c6033aa03d)
+        ;
+
+        
+    
+    
+                marker_0d737410167bebf6a130aec32c9b64e7.setIcon(icon_c21d3bcb5a0d1c80c9f7d11cc58ff661);
+            
+    
+            var marker_5c2acd8edb221b14e23bbea59d09c905 = L.marker(
+                [33.8145, 131.7438],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_afe56c4adb0e0a2a1ff9be80123d8588 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dc351b3e176ed6c27d8fd8b4e891ac67 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_36c6d696c5f76aa7f4d279595f59829f = $(`<div id="html_36c6d696c5f76aa7f4d279595f59829f" style="width: 100.0%; height: 100.0%;">             <b>CCA920</b><br>             고도: 24000.000767999998 ft<br>             속도: 369.42679200000003 knots<br>             방향: 255.1°         </div>`)[0];
+                popup_dc351b3e176ed6c27d8fd8b4e891ac67.setContent(html_36c6d696c5f76aa7f4d279595f59829f);
+            
+        
+
+        marker_5c2acd8edb221b14e23bbea59d09c905.bindPopup(popup_dc351b3e176ed6c27d8fd8b4e891ac67)
+        ;
+
+        
+    
+    
+                marker_5c2acd8edb221b14e23bbea59d09c905.setIcon(icon_afe56c4adb0e0a2a1ff9be80123d8588);
+            
+    
+            var marker_1b178a555539dd3277fd5bff5e91831d = L.marker(
+                [37.2123, 126.764],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_5efc089d6eb0d722efe8d2f9d1a4ae89 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4e2b16331ee27c2df81b2b2e927b5971 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_0b68ee72ba70eaa5b15c6ef76553d470 = $(`<div id="html_0b68ee72ba70eaa5b15c6ef76553d470" style="width: 100.0%; height: 100.0%;">             <b>ESR650</b><br>             고도: 6625.000212 ft<br>             속도: 174.2846944 knots<br>             방향: 289.79°         </div>`)[0];
+                popup_4e2b16331ee27c2df81b2b2e927b5971.setContent(html_0b68ee72ba70eaa5b15c6ef76553d470);
+            
+        
+
+        marker_1b178a555539dd3277fd5bff5e91831d.bindPopup(popup_4e2b16331ee27c2df81b2b2e927b5971)
+        ;
+
+        
+    
+    
+                marker_1b178a555539dd3277fd5bff5e91831d.setIcon(icon_5efc089d6eb0d722efe8d2f9d1a4ae89);
+            
+    
+            var marker_ca5e008a201f52c1eeeda539f239a086 = L.marker(
+                [35.9599, 126.427],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_8e83b16363ed29f64d2be8fbf40ad7b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2dce914bdf124e676b8792271212f2b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3107b817c3d05711970ea87621830d8e = $(`<div id="html_3107b817c3d05711970ea87621830d8e" style="width: 100.0%; height: 100.0%;">             <b>KAL655</b><br>             고도: 26075.000834399998 ft<br>             속도: 427.7808688 knots<br>             방향: 192.28°         </div>`)[0];
+                popup_2dce914bdf124e676b8792271212f2b7.setContent(html_3107b817c3d05711970ea87621830d8e);
+            
+        
+
+        marker_ca5e008a201f52c1eeeda539f239a086.bindPopup(popup_2dce914bdf124e676b8792271212f2b7)
+        ;
+
+        
+    
+    
+                marker_ca5e008a201f52c1eeeda539f239a086.setIcon(icon_8e83b16363ed29f64d2be8fbf40ad7b9);
+            
+    
+            var marker_85d70f57654b1bae15424506a1b79843 = L.marker(
+                [37.5479, 126.8069],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_008f92572550909bfc90055152de24db = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfd4273883b95053caab4e04916f652c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_86aef89aada2fdf2eb4b52b10d9f834d = $(`<div id="html_86aef89aada2fdf2eb4b52b10d9f834d" style="width: 100.0%; height: 100.0%;">             <b>ESR222</b><br>             고도: -225.0000072 ft<br>             속도: 138.595792 knots<br>             방향: 315.0°         </div>`)[0];
+                popup_dfd4273883b95053caab4e04916f652c.setContent(html_86aef89aada2fdf2eb4b52b10d9f834d);
+            
+        
+
+        marker_85d70f57654b1bae15424506a1b79843.bindPopup(popup_dfd4273883b95053caab4e04916f652c)
+        ;
+
+        
+    
+    
+                marker_85d70f57654b1bae15424506a1b79843.setIcon(icon_008f92572550909bfc90055152de24db);
+            
+    
+            var marker_74dd91fc1a82c99ad5c6386ec0a0750e = L.marker(
+                [35.9662, 131.0369],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_9b6b8a064913fb48bba6619d506c1162 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f048d57beb41633b65715893787dfac1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_632bb8b00661f74a4ab0b897f768028c = $(`<div id="html_632bb8b00661f74a4ab0b897f768028c" style="width: 100.0%; height: 100.0%;">             <b>UNKNOWN</b><br>             고도: 39975.0012792 ft<br>             속도: 370.22376640000004 knots<br>             방향: 267.99°         </div>`)[0];
+                popup_f048d57beb41633b65715893787dfac1.setContent(html_632bb8b00661f74a4ab0b897f768028c);
+            
+        
+
+        marker_74dd91fc1a82c99ad5c6386ec0a0750e.bindPopup(popup_f048d57beb41633b65715893787dfac1)
+        ;
+
+        
+    
+    
+                marker_74dd91fc1a82c99ad5c6386ec0a0750e.setIcon(icon_9b6b8a064913fb48bba6619d506c1162);
+            
+    
+            var marker_1262289c64dd2d476523aa356a571051 = L.marker(
+                [33.8517, 126.5681],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_84fec96307bb73e836405d47d2b67066 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_3c1487557312d971e6514ba44d5ecef9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_078ccdc635bd3488187302a64e911bf7 = $(`<div id="html_078ccdc635bd3488187302a64e911bf7" style="width: 100.0%; height: 100.0%;">             <b>PAL403</b><br>             고도: 36000.001152 ft<br>             속도: 458.3185952 knots<br>             방향: 177.87°         </div>`)[0];
+                popup_3c1487557312d971e6514ba44d5ecef9.setContent(html_078ccdc635bd3488187302a64e911bf7);
+            
+        
+
+        marker_1262289c64dd2d476523aa356a571051.bindPopup(popup_3c1487557312d971e6514ba44d5ecef9)
+        ;
+
+        
+    
+    
+                marker_1262289c64dd2d476523aa356a571051.setIcon(icon_84fec96307bb73e836405d47d2b67066);
+            
+    
+            var marker_8b202f6519cbe4c9c5ab8052d36b8460 = L.marker(
+                [37.5049, 126.2987],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_ea455ecce5f96b7488c011568a96f79d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5fdd9aae8e0662656c0eb7c07e3113f0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_47bee2cea0cca5afa1c644ad84cae6f9 = $(`<div id="html_47bee2cea0cca5afa1c644ad84cae6f9" style="width: 100.0%; height: 100.0%;">             <b>PAL473</b><br>             고도: 4200.0001344 ft<br>             속도: 246.18733600000002 knots<br>             방향: 255.17°         </div>`)[0];
+                popup_5fdd9aae8e0662656c0eb7c07e3113f0.setContent(html_47bee2cea0cca5afa1c644ad84cae6f9);
+            
+        
+
+        marker_8b202f6519cbe4c9c5ab8052d36b8460.bindPopup(popup_5fdd9aae8e0662656c0eb7c07e3113f0)
+        ;
+
+        
+    
+    
+                marker_8b202f6519cbe4c9c5ab8052d36b8460.setIcon(icon_ea455ecce5f96b7488c011568a96f79d);
+            
+    
+            var marker_8b015d2561fdbc27662a0884ee148059 = L.marker(
+                [37.3747, 124.4423],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_9edc5f7dd9b9582a1dcab83901994450 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_79388545d71f78781e5adb76afc4ad43 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_6b8546dd7f11151cec12bb4d1ac0f71e = $(`<div id="html_6b8546dd7f11151cec12bb4d1ac0f71e" style="width: 100.0%; height: 100.0%;">             <b>CSN370</b><br>             고도: 30100.0009632 ft<br>             속도: 367.2108144 knots<br>             방향: 256.46°         </div>`)[0];
+                popup_79388545d71f78781e5adb76afc4ad43.setContent(html_6b8546dd7f11151cec12bb4d1ac0f71e);
+            
+        
+
+        marker_8b015d2561fdbc27662a0884ee148059.bindPopup(popup_79388545d71f78781e5adb76afc4ad43)
+        ;
+
+        
+    
+    
+                marker_8b015d2561fdbc27662a0884ee148059.setIcon(icon_9edc5f7dd9b9582a1dcab83901994450);
+            
+    
+            var marker_7dcd541c3c031b2e0d1f645da4674850 = L.marker(
+                [33.9549, 131.3682],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_e68d18616e3351f28efcdc91c1ec7705 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6ab2bef4f06b8c0b1aed6e595e0fa940 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7d307b63cbe46695e9e727d45d258382 = $(`<div id="html_7d307b63cbe46695e9e727d45d258382" style="width: 100.0%; height: 100.0%;">             <b>CES540</b><br>             고도: 25975.0008312 ft<br>             속도: 373.4699792 knots<br>             방향: 251.42°         </div>`)[0];
+                popup_6ab2bef4f06b8c0b1aed6e595e0fa940.setContent(html_7d307b63cbe46695e9e727d45d258382);
+            
+        
+
+        marker_7dcd541c3c031b2e0d1f645da4674850.bindPopup(popup_6ab2bef4f06b8c0b1aed6e595e0fa940)
+        ;
+
+        
+    
+    
+                marker_7dcd541c3c031b2e0d1f645da4674850.setIcon(icon_e68d18616e3351f28efcdc91c1ec7705);
+            
+    
+            var marker_6555bae7d21ce29ba7f4fcc5df8bdfe6 = L.marker(
+                [36.6046, 126.6049],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_4666a46bad19c9ec2fd6618f1b2210f7 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_13cc4df64fdea582eda015e9942b909b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_339b5a5f50b8238a71836bd2a1555c24 = $(`<div id="html_339b5a5f50b8238a71836bd2a1555c24" style="width: 100.0%; height: 100.0%;">             <b>VJC861</b><br>             고도: 20900.0006688 ft<br>             속도: 418.17829919999997 knots<br>             방향: 188.11°         </div>`)[0];
+                popup_13cc4df64fdea582eda015e9942b909b.setContent(html_339b5a5f50b8238a71836bd2a1555c24);
+            
+        
+
+        marker_6555bae7d21ce29ba7f4fcc5df8bdfe6.bindPopup(popup_13cc4df64fdea582eda015e9942b909b)
+        ;
+
+        
+    
+    
+                marker_6555bae7d21ce29ba7f4fcc5df8bdfe6.setIcon(icon_4666a46bad19c9ec2fd6618f1b2210f7);
+            
+    
+            var marker_cfe078024f2fb668e6aaf51258d2d10c = L.marker(
+                [33.3459, 131.0987],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_b28f7c61b6c076fbd1842c42da1dafd9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bd210243d59b1211ddb9ebcb7a2607b4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_918a9816eabdc0d44fe44c518a31a8cb = $(`<div id="html_918a9816eabdc0d44fe44c518a31a8cb" style="width: 100.0%; height: 100.0%;">             <b>UPS105</b><br>             고도: 30725.0009832 ft<br>             속도: 549.2903072 knots<br>             방향: 71.53°         </div>`)[0];
+                popup_bd210243d59b1211ddb9ebcb7a2607b4.setContent(html_918a9816eabdc0d44fe44c518a31a8cb);
+            
+        
+
+        marker_cfe078024f2fb668e6aaf51258d2d10c.bindPopup(popup_bd210243d59b1211ddb9ebcb7a2607b4)
+        ;
+
+        
+    
+    
+                marker_cfe078024f2fb668e6aaf51258d2d10c.setIcon(icon_b28f7c61b6c076fbd1842c42da1dafd9);
+            
+    
+            var marker_c02d6b2ba6f6933ceec019d1d74489c5 = L.marker(
+                [37.2849, 126.6166],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_923127d48c8ce3efa463d4ca02c5f4a6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fc58265d77c147b70dc61f2f2cd694e0 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_700e1eb8576398df6ebf4fcd634836a8 = $(`<div id="html_700e1eb8576398df6ebf4fcd634836a8" style="width: 100.0%; height: 100.0%;">             <b>APJ711</b><br>             고도: 4275.0001368 ft<br>             속도: 164.25448 knots<br>             방향: 324.67°         </div>`)[0];
+                popup_fc58265d77c147b70dc61f2f2cd694e0.setContent(html_700e1eb8576398df6ebf4fcd634836a8);
+            
+        
+
+        marker_c02d6b2ba6f6933ceec019d1d74489c5.bindPopup(popup_fc58265d77c147b70dc61f2f2cd694e0)
+        ;
+
+        
+    
+    
+                marker_c02d6b2ba6f6933ceec019d1d74489c5.setIcon(icon_923127d48c8ce3efa463d4ca02c5f4a6);
+            
+    
+            var marker_e000a5149496e62b22683fdeb08d054b = L.marker(
+                [33.2103, 131.6798],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_0a3631ebae7bede7450ecfabc13d0c3f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_5971f6bf50606317996b6f95fdf3c463 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_faab7be095197c4ba2abdf7c282ff550 = $(`<div id="html_faab7be095197c4ba2abdf7c282ff550" style="width: 100.0%; height: 100.0%;">             <b>ANA457</b><br>             고도: 23725.0007592 ft<br>             속도: 386.1243776 knots<br>             방향: 240.18°         </div>`)[0];
+                popup_5971f6bf50606317996b6f95fdf3c463.setContent(html_faab7be095197c4ba2abdf7c282ff550);
+            
+        
+
+        marker_e000a5149496e62b22683fdeb08d054b.bindPopup(popup_5971f6bf50606317996b6f95fdf3c463)
+        ;
+
+        
+    
+    
+                marker_e000a5149496e62b22683fdeb08d054b.setIcon(icon_0a3631ebae7bede7450ecfabc13d0c3f);
+            
+    
+            var marker_6f4f3f1cdc82bb660dd211d1d0d91f2a = L.marker(
+                [37.3916, 126.5222],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_8e1bf0e9c75f726f8b99fdd3d8a8b234 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d1d2ce0514e9614378110bd40bc9688e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_884500048bd61a866e38fa1fce449a89 = $(`<div id="html_884500048bd61a866e38fa1fce449a89" style="width: 100.0%; height: 100.0%;">             <b>ASV716</b><br>             고도: 1450.0000464 ft<br>             속도: 127.8852336 knots<br>             방향: 325.19°         </div>`)[0];
+                popup_d1d2ce0514e9614378110bd40bc9688e.setContent(html_884500048bd61a866e38fa1fce449a89);
+            
+        
+
+        marker_6f4f3f1cdc82bb660dd211d1d0d91f2a.bindPopup(popup_d1d2ce0514e9614378110bd40bc9688e)
+        ;
+
+        
+    
+    
+                marker_6f4f3f1cdc82bb660dd211d1d0d91f2a.setIcon(icon_8e1bf0e9c75f726f8b99fdd3d8a8b234);
+            
+    
+            var marker_51e073bc90195ac94c02be9739674c3e = L.marker(
+                [34.8405, 126.6716],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_8cf1967a2853af4a7cbfb3232ab634f5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b56f22641c024eda097803ed3c6c6ab9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_be80a2f02a8f5c11b20030b3366e72e7 = $(`<div id="html_be80a2f02a8f5c11b20030b3366e72e7" style="width: 100.0%; height: 100.0%;">             <b>KAL1241</b><br>             고도: 17475.0005592 ft<br>             속도: 359.3382624 knots<br>             방향: 184.95°         </div>`)[0];
+                popup_b56f22641c024eda097803ed3c6c6ab9.setContent(html_be80a2f02a8f5c11b20030b3366e72e7);
+            
+        
+
+        marker_51e073bc90195ac94c02be9739674c3e.bindPopup(popup_b56f22641c024eda097803ed3c6c6ab9)
+        ;
+
+        
+    
+    
+                marker_51e073bc90195ac94c02be9739674c3e.setIcon(icon_8cf1967a2853af4a7cbfb3232ab634f5);
+            
+    
+            var marker_92977866b13370f62aa70eef9e62284d = L.marker(
+                [33.5807, 130.5726],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_510916d3aa9c80b64e92ad40b0416a6b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f4ce0e1bbe9cd83f5bb0f1ac3dff7aad = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_856f1c75a3ec3a956ab14f3fb806073a = $(`<div id="html_856f1c75a3ec3a956ab14f3fb806073a" style="width: 100.0%; height: 100.0%;">             <b>UNKNOWN</b><br>             고도: 9600.0003072 ft<br>             속도: 322.03597279999997 knots<br>             방향: 140.92°         </div>`)[0];
+                popup_f4ce0e1bbe9cd83f5bb0f1ac3dff7aad.setContent(html_856f1c75a3ec3a956ab14f3fb806073a);
+            
+        
+
+        marker_92977866b13370f62aa70eef9e62284d.bindPopup(popup_f4ce0e1bbe9cd83f5bb0f1ac3dff7aad)
+        ;
+
+        
+    
+    
+                marker_92977866b13370f62aa70eef9e62284d.setIcon(icon_510916d3aa9c80b64e92ad40b0416a6b);
+            
+    
+            var marker_3372a2edd38fc03aaf2d44bf0337871c = L.marker(
+                [33.0954, 130.3358],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_08599999cd18209ab30202f8e7c7928b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_53630fba0c15f8e4de6efad510458dbd = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_ec07e887baa575afb180c83680ea4eb7 = $(`<div id="html_ec07e887baa575afb180c83680ea4eb7" style="width: 100.0%; height: 100.0%;">             <b>ANA976</b><br>             고도: 25000.0008 ft<br>             속도: 539.5516688 knots<br>             방향: 70.62°         </div>`)[0];
+                popup_53630fba0c15f8e4de6efad510458dbd.setContent(html_ec07e887baa575afb180c83680ea4eb7);
+            
+        
+
+        marker_3372a2edd38fc03aaf2d44bf0337871c.bindPopup(popup_53630fba0c15f8e4de6efad510458dbd)
+        ;
+
+        
+    
+    
+                marker_3372a2edd38fc03aaf2d44bf0337871c.setIcon(icon_08599999cd18209ab30202f8e7c7928b);
+            
+    
+            var marker_408c1ba8e3f127a0b3980432a5640127 = L.marker(
+                [37.4222, 126.4951],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_f37abcb3a0dd877f513c607ab628db48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_87b01e4c0a968a134719d2fa2a592ce2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f91cda302c09d7d6ecfbf4439824baed = $(`<div id="html_f91cda302c09d7d6ecfbf4439824baed" style="width: 100.0%; height: 100.0%;">             <b>JNA350</b><br>             고도: 650.0000208 ft<br>             속도: 130.43166399999998 knots<br>             방향: 324.36°         </div>`)[0];
+                popup_87b01e4c0a968a134719d2fa2a592ce2.setContent(html_f91cda302c09d7d6ecfbf4439824baed);
+            
+        
+
+        marker_408c1ba8e3f127a0b3980432a5640127.bindPopup(popup_87b01e4c0a968a134719d2fa2a592ce2)
+        ;
+
+        
+    
+    
+                marker_408c1ba8e3f127a0b3980432a5640127.setIcon(icon_f37abcb3a0dd877f513c607ab628db48);
+            
+    
+            var marker_7acebe0d32ba05d2dc2309bd58568cff = L.marker(
+                [37.484, 127.3592],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_ec1cf8abb54213d1d88636c81b6e9458 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_aeb885a52c85a8d45405d32434d2fe19 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_631bed2f7939679b125db1f980a35d54 = $(`<div id="html_631bed2f7939679b125db1f980a35d54" style="width: 100.0%; height: 100.0%;">             <b>AAR204</b><br>             고도: 20225.0006472 ft<br>             속도: 425.56489120000003 knots<br>             방향: 78.48°         </div>`)[0];
+                popup_aeb885a52c85a8d45405d32434d2fe19.setContent(html_631bed2f7939679b125db1f980a35d54);
+            
+        
+
+        marker_7acebe0d32ba05d2dc2309bd58568cff.bindPopup(popup_aeb885a52c85a8d45405d32434d2fe19)
+        ;
+
+        
+    
+    
+                marker_7acebe0d32ba05d2dc2309bd58568cff.setIcon(icon_ec1cf8abb54213d1d88636c81b6e9458);
+            
+    
+            var marker_85e340d271a1c009c8a8441795cf73f5 = L.marker(
+                [35.7453, 126.9327],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_6e6f332ebf19ffbd6196ccabb5946f72 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2bc0629bdefee2ad0a7add993a600689 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_43b4344e316e3c013b8cb8b7a7f71de3 = $(`<div id="html_43b4344e316e3c013b8cb8b7a7f71de3" style="width: 100.0%; height: 100.0%;">             <b>KAL9314</b><br>             고도: 24600.0007872 ft<br>             속도: 395.55200160000004 knots<br>             방향: 5.08°         </div>`)[0];
+                popup_2bc0629bdefee2ad0a7add993a600689.setContent(html_43b4344e316e3c013b8cb8b7a7f71de3);
+            
+        
+
+        marker_85e340d271a1c009c8a8441795cf73f5.bindPopup(popup_2bc0629bdefee2ad0a7add993a600689)
+        ;
+
+        
+    
+    
+                marker_85e340d271a1c009c8a8441795cf73f5.setIcon(icon_6e6f332ebf19ffbd6196ccabb5946f72);
+            
+    
+            var marker_d93ac7c63fd0337f5afb41b509b67bc0 = L.marker(
+                [33.4364, 130.2383],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_0b5a7b40ec24a73bdad1fff576cfc63e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ef0c903f537bbfb8551cff206945d53b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d6bf9341419ff54b33951c4c3251e36d = $(`<div id="html_d6bf9341419ff54b33951c4c3251e36d" style="width: 100.0%; height: 100.0%;">             <b>FDX5164</b><br>             고도: 32000.001024 ft<br>             속도: 396.8543744 knots<br>             방향: 245.11°         </div>`)[0];
+                popup_ef0c903f537bbfb8551cff206945d53b.setContent(html_d6bf9341419ff54b33951c4c3251e36d);
+            
+        
+
+        marker_d93ac7c63fd0337f5afb41b509b67bc0.bindPopup(popup_ef0c903f537bbfb8551cff206945d53b)
+        ;
+
+        
+    
+    
+                marker_d93ac7c63fd0337f5afb41b509b67bc0.setIcon(icon_0b5a7b40ec24a73bdad1fff576cfc63e);
+            
+    
+            var marker_91627f71c41a8a1e806f4e2603860d6c = L.marker(
+                [36.791, 127.052],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_c83723f6c088c435eb029df7e308be76 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d7bbcc8ad0d7d269243eb171dd77beb3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5fa323faf1478cfd202ce768b4e7e5e5 = $(`<div id="html_5fa323faf1478cfd202ce768b4e7e5e5" style="width: 100.0%; height: 100.0%;">             <b>ABL8022</b><br>             고도: 12925.0004136 ft<br>             속도: 306.6018832 knots<br>             방향: 36.65°         </div>`)[0];
+                popup_d7bbcc8ad0d7d269243eb171dd77beb3.setContent(html_5fa323faf1478cfd202ce768b4e7e5e5);
+            
+        
+
+        marker_91627f71c41a8a1e806f4e2603860d6c.bindPopup(popup_d7bbcc8ad0d7d269243eb171dd77beb3)
+        ;
+
+        
+    
+    
+                marker_91627f71c41a8a1e806f4e2603860d6c.setIcon(icon_c83723f6c088c435eb029df7e308be76);
+            
+    
+            var marker_0e343a8a6030c0ed0d8f091e5990ee67 = L.marker(
+                [36.6614, 126.9938],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_81d5eefafc9735015545b6d1eb53809c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_267040a78bb1b3fa2ee1edeb99684cf9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6926eed17975fc1f634af5a0f1de686 = $(`<div id="html_a6926eed17975fc1f634af5a0f1de686" style="width: 100.0%; height: 100.0%;">             <b>AAR8986</b><br>             고도: 16000.000512 ft<br>             속도: 338.1504064 knots<br>             방향: 358.31°         </div>`)[0];
+                popup_267040a78bb1b3fa2ee1edeb99684cf9.setContent(html_a6926eed17975fc1f634af5a0f1de686);
+            
+        
+
+        marker_0e343a8a6030c0ed0d8f091e5990ee67.bindPopup(popup_267040a78bb1b3fa2ee1edeb99684cf9)
+        ;
+
+        
+    
+    
+                marker_0e343a8a6030c0ed0d8f091e5990ee67.setIcon(icon_81d5eefafc9735015545b6d1eb53809c);
+            
+    
+            var marker_853ac50bcdb47de01c23ce89cc69188c = L.marker(
+                [37.5577, 126.8032],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_5504da055c5f9ca9671bd5425b9df56b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "stop",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e04969a95f1b058a72a1d342d8aa00e3 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_76dbe09f7bb4720c927da1f2c52d8245 = $(`<div id="html_76dbe09f7bb4720c927da1f2c52d8245" style="width: 100.0%; height: 100.0%;">             <b>KAL1326</b><br>             고도: nan ft<br>             속도: 2.9935136 knots<br>             방향: 45.0°         </div>`)[0];
+                popup_e04969a95f1b058a72a1d342d8aa00e3.setContent(html_76dbe09f7bb4720c927da1f2c52d8245);
+            
+        
+
+        marker_853ac50bcdb47de01c23ce89cc69188c.bindPopup(popup_e04969a95f1b058a72a1d342d8aa00e3)
+        ;
+
+        
+    
+    
+                marker_853ac50bcdb47de01c23ce89cc69188c.setIcon(icon_5504da055c5f9ca9671bd5425b9df56b);
+            
+    
+            var marker_48c275ffdc994a76400e57fe13442024 = L.marker(
+                [36.832, 127.1],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_e77ff519db4f6ac2e9d75f39e09c0dac = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_24891d5fa4ff394183a07b32ed4dc930 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_95cec88f23c115511eba28fa49c3ae3a = $(`<div id="html_95cec88f23c115511eba28fa49c3ae3a" style="width: 100.0%; height: 100.0%;">             <b>KAL1336</b><br>             고도: 12875.000412000001 ft<br>             속도: 358.6967952 knots<br>             방향: 43.08°         </div>`)[0];
+                popup_24891d5fa4ff394183a07b32ed4dc930.setContent(html_95cec88f23c115511eba28fa49c3ae3a);
+            
+        
+
+        marker_48c275ffdc994a76400e57fe13442024.bindPopup(popup_24891d5fa4ff394183a07b32ed4dc930)
+        ;
+
+        
+    
+    
+                marker_48c275ffdc994a76400e57fe13442024.setIcon(icon_e77ff519db4f6ac2e9d75f39e09c0dac);
+            
+    
+            var marker_605f253fec8d495486adfc44ec4b6cf0 = L.marker(
+                [35.6608, 126.9476],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_d61380e363991458cf0745fcf88704a1 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7111dbbd5547574a6e99ac96b12fee46 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8cfc0102cfa8e65061d1761f940b9e27 = $(`<div id="html_8cfc0102cfa8e65061d1761f940b9e27" style="width: 100.0%; height: 100.0%;">             <b>JNA532</b><br>             고도: 21000.000672000002 ft<br>             속도: 393.80254560000003 knots<br>             방향: 3.64°         </div>`)[0];
+                popup_7111dbbd5547574a6e99ac96b12fee46.setContent(html_8cfc0102cfa8e65061d1761f940b9e27);
+            
+        
+
+        marker_605f253fec8d495486adfc44ec4b6cf0.bindPopup(popup_7111dbbd5547574a6e99ac96b12fee46)
+        ;
+
+        
+    
+    
+                marker_605f253fec8d495486adfc44ec4b6cf0.setIcon(icon_d61380e363991458cf0745fcf88704a1);
+            
+    
+            var marker_a978143be49a2f305748ac8f777b9692 = L.marker(
+                [34.3438, 126.6266],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_5a5f4d1b7bf1c65e0da1b6e1f0460098 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c25457c8569298ea104735bb39e8200 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_b6c73d202fa6dc7411e1524e23202e4e = $(`<div id="html_b6c73d202fa6dc7411e1524e23202e4e" style="width: 100.0%; height: 100.0%;">             <b>JNA531</b><br>             고도: 14450.0004624 ft<br>             속도: 365.53911200000005 knots<br>             방향: 176.86°         </div>`)[0];
+                popup_4c25457c8569298ea104735bb39e8200.setContent(html_b6c73d202fa6dc7411e1524e23202e4e);
+            
+        
+
+        marker_a978143be49a2f305748ac8f777b9692.bindPopup(popup_4c25457c8569298ea104735bb39e8200)
+        ;
+
+        
+    
+    
+                marker_a978143be49a2f305748ac8f777b9692.setIcon(icon_5a5f4d1b7bf1c65e0da1b6e1f0460098);
+            
+    
+            var marker_e09cc68a992a4c15a2dbf10826878da2 = L.marker(
+                [37.5554, 126.8036],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_46ed78699402a50eed524634433134af = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "gray",
+  "iconColor": "white",
+  "icon": "stop",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_37b7b4090edc5484a52187736201c322 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1b9f807ba00f418e47a83a6107df0fef = $(`<div id="html_1b9f807ba00f418e47a83a6107df0fef" style="width: 100.0%; height: 100.0%;">             <b>AAR8999</b><br>             고도: nan ft<br>             속도: nan knots<br>             방향: 312.19°         </div>`)[0];
+                popup_37b7b4090edc5484a52187736201c322.setContent(html_1b9f807ba00f418e47a83a6107df0fef);
+            
+        
+
+        marker_e09cc68a992a4c15a2dbf10826878da2.bindPopup(popup_37b7b4090edc5484a52187736201c322)
+        ;
+
+        
+    
+    
+                marker_e09cc68a992a4c15a2dbf10826878da2.setIcon(icon_46ed78699402a50eed524634433134af);
+            
+    
+            var marker_007df9db15ffde970bb54a44a40cb6ec = L.marker(
+                [37.3927, 124.9867],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_f189596883e3b3d7385f06b7f95334c5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a5fe25e7ae5768271cba0e51e1863a5b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7326f722b207f4fe4107a9d2592d4b0b = $(`<div id="html_7326f722b207f4fe4107a9d2592d4b0b" style="width: 100.0%; height: 100.0%;">             <b>KAL863</b><br>             고도: 30100.0009632 ft<br>             속도: 377.10496 knots<br>             방향: 268.63°         </div>`)[0];
+                popup_a5fe25e7ae5768271cba0e51e1863a5b.setContent(html_7326f722b207f4fe4107a9d2592d4b0b);
+            
+        
+
+        marker_007df9db15ffde970bb54a44a40cb6ec.bindPopup(popup_a5fe25e7ae5768271cba0e51e1863a5b)
+        ;
+
+        
+    
+    
+                marker_007df9db15ffde970bb54a44a40cb6ec.setIcon(icon_f189596883e3b3d7385f06b7f95334c5);
+            
+    
+            var marker_5a91513dc68fb9bd441c11ac8db0e7ae = L.marker(
+                [35.7772, 131.4574],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_09e2c298440d0fb1a9d5aec8e92e2581 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7465553a11e41cef3042631a43c97992 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1123c9df6234610bf323623843cb8ddc = $(`<div id="html_1123c9df6234610bf323623843cb8ddc" style="width: 100.0%; height: 100.0%;">             <b>JNA348</b><br>             고도: 36000.001152 ft<br>             속도: 340.07480799999996 knots<br>             방향: 274.55°         </div>`)[0];
+                popup_7465553a11e41cef3042631a43c97992.setContent(html_1123c9df6234610bf323623843cb8ddc);
+            
+        
+
+        marker_5a91513dc68fb9bd441c11ac8db0e7ae.bindPopup(popup_7465553a11e41cef3042631a43c97992)
+        ;
+
+        
+    
+    
+                marker_5a91513dc68fb9bd441c11ac8db0e7ae.setIcon(icon_09e2c298440d0fb1a9d5aec8e92e2581);
+            
+    
+            var marker_77aeb999a2ae98d13701b9fc8fc85e10 = L.marker(
+                [33.5202, 131.6689],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_24a76ef58bda7391f099631510d8aeba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ac690bd11e57623a0c5176fe80d2669d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9c00e1edbf4f8688640a1d12ef981ea2 = $(`<div id="html_9c00e1edbf4f8688640a1d12ef981ea2" style="width: 100.0%; height: 100.0%;">             <b>SFJ54</b><br>             고도: 28900.0009248 ft<br>             속도: 536.8108544 knots<br>             방향: 76.97°         </div>`)[0];
+                popup_ac690bd11e57623a0c5176fe80d2669d.setContent(html_9c00e1edbf4f8688640a1d12ef981ea2);
+            
+        
+
+        marker_77aeb999a2ae98d13701b9fc8fc85e10.bindPopup(popup_ac690bd11e57623a0c5176fe80d2669d)
+        ;
+
+        
+    
+    
+                marker_77aeb999a2ae98d13701b9fc8fc85e10.setIcon(icon_24a76ef58bda7391f099631510d8aeba);
+            
+    
+            var marker_1d084f19f29caac0c5ae9715d707966c = L.marker(
+                [35.9215, 129.9404],
+                {
+}
+            ).addTo(map_3cefadb2ef9c4a77bb3321dea16138f2);
+        
+    
+            var icon_c3670ef6b7d208ea96c368b5bd10b3a4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "plane",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_732c4e64685718ae6b3a358eada5b19e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f49a7424993bb6560619515391205cac = $(`<div id="html_f49a7424993bb6560619515391205cac" style="width: 100.0%; height: 100.0%;">             <b>CKS252</b><br>             고도: 34000.001088000005 ft<br>             속도: 352.709768 knots<br>             방향: 278.31°         </div>`)[0];
+                popup_732c4e64685718ae6b3a358eada5b19e.setContent(html_f49a7424993bb6560619515391205cac);
+            
+        
+
+        marker_1d084f19f29caac0c5ae9715d707966c.bindPopup(popup_732c4e64685718ae6b3a358eada5b19e)
+        ;
+
+        
+    
+    
+                marker_1d084f19f29caac0c5ae9715d707966c.setIcon(icon_c3670ef6b7d208ea96c368b5bd10b3a4);
+            
+</script>
+</html>
