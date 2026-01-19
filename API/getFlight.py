@@ -5,6 +5,7 @@ import time
 from dotenv import load_dotenv
 import os
 import folium
+import csv
 
 # .env 파일에서 환경 변수 로드
 load_dotenv()
@@ -255,5 +256,89 @@ def create_flight_map(df,center_lat=37.4602, center_lon=126.4406):
 
     return m
 
-korean_df=get_korean_flights()
-create_flight_map(korean_df)
+# korean_df=get_korean_flights()
+# create_flight_map(korean_df)
+
+
+def collect_continuous_data(duration_minutes=60, interval_seconds=60):
+    """
+    일정 기간 동안 주기적으로 항공기 데이터 수집
+
+    Args:
+        duration_minutes: 총 수집 시간 (분)
+        interval_seconds: 수집 간격 (초)
+    """
+    filename= f"flight_data_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
+
+    # CSV 파일 헤더 작성
+    with open(filename, 'w', newline='', encoding='utf-8') as f:
+        writer = csv.writer(f)
+        writer.writerow([
+            'timestamp', 'icao24', 'callsign', 'country', 'longtitude', 'latitude',
+            'altitude_m', 'velocity_ms',
+            'heading', 'vertical_rate', 'on_ground'
+        ])
+
+    start_time=time.time()
+    end_time=start_time + duration_minutes * 60
+    collection_count=0
+
+    print(f"데이터 수집 시작")
+    print(f"기간: {duration_minutes}분, 간격: {interval_seconds}초")
+    print(f"저장 파일: {filename}")
+
+    try:
+        while time.time()<end_time:
+            collection_count +=1
+            current_time=datetime.now()
+
+            # 데이터 수집
+            url = "https://opensky-network.org/api/states/all"
+            response = requests.get(url)
+            data = response.json()
+            
+            saved_count=0
+            # 한국 상공 필터링 및 저장
+            with open(filename, 'a', newline='', encoding='utf-8') as f:
+                writer = csv.writer(f)
+
+                for state in data['states']:
+                    if state[5] is None or state[6] is None:
+                        continue
+
+                    lon, lat = state[5], state[6]
+
+                    if 33.0 <= lat <= 39.0 and 124.0 <= lon <= 132.0:
+                        writer.writerow([
+                            current_time.strftime('%Y-%m-%d %H:%M:%S'),
+                            state[0],
+                            state[1].strip() if state[1] else 'UNKNOWN',
+                            state[2],
+                            lon,
+                            lat,
+                            state[7],
+                            state[9],
+                            state[10],
+                            state[11],
+                            state[8]
+                        ])
+                        saved_count += 1
+            
+            elapsed = int(time.time() - start_time) # 경과 시간
+            remaining = int(end_time - time.time()) # 남은 시간
+
+            print(f"[{collection_count}] {current_time.strftime('%H:%M:%S')} - 수집 완료, 저장된 항공기: {saved_count}대, 경과: {elapsed}s, 남은 시간: {remaining}s")
+
+            # 다음 수집까지 대기
+            time.sleep(interval_seconds)
+    except KeyboardInterrupt:
+        print("데이터 수집 중단됨 by 사용자")
+
+    print("데이터 수집 완료")
+    print(f"총 수집 횟수: {collection_count}")
+    print(f"저장 파일: {filename}")
+
+    df = pd.read_csv(filename)
+    print(f"총 저장된 항공기 데이터: {len(df)}행")
+
+collect_continuous_data(duration_minutes=1, interval_seconds=10)
