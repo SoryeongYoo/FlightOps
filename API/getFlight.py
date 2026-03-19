@@ -341,4 +341,75 @@ def collect_continuous_data(duration_minutes=60, interval_seconds=60):
     df = pd.read_csv(filename)
     print(f"총 저장된 항공기 데이터: {len(df)}행")
 
-collect_continuous_data(duration_minutes=1, interval_seconds=10)
+# collect_continuous_data(duration_minutes=1, interval_seconds=10)
+
+def analyze_icn_cju_route():
+    """
+    인천(ICN) - 제주(CJU) 노선 항공기 분석
+    """
+    korean_df= get_korean_flights()
+
+    # 인천공항 주변 (위도: 37.3~37.6, 경도: 126.3~126.6)
+    icn_area = korean_df[
+        (korean_df['latitude']>37.3)& (korean_df['latitude']<37.6)&
+        (korean_df['longtitude']>126.3)& (korean_df['longtitude']<126.6)
+    ]
+
+    # 제주공항 주변 (위도: 33.4~33.6, 경도: 126.4~126.6)
+    cju_area= korean_df[
+        (korean_df['latitude']>33.4)& (korean_df['latitude']<33.6)&
+        (korean_df['longtitude']>126.4)& (korean_df['longtitude']<126.6)
+    ]
+
+    # 인천-제주 노선 상공 (위도: 33.4~36.5, 경도: 126.0~127.0, 고도 20000ft 이상)
+    route_area = korean_df[
+        (korean_df['latitude']>33.4)& (korean_df['latitude']<36.5)&
+        (korean_df['longtitude']>126.0)& (korean_df['longtitude']<127.0)&
+        (korean_df['altitude_ft']>20000)  # 고도 20000ft 이상(순항고도)
+    ]
+
+    print(f"인천공항 주변 항공기: {len(icn_area)}대")
+    if len(icn_area)>0:
+        print(icn_area[['callsign','altitude_ft', 'on_ground']])
+
+    print(f"제주공항 주변 항공기: {len(cju_area)}대")
+    if len(cju_area)>0:
+        print(cju_area[['callsign','altitude_ft', 'on_ground']])
+
+    print(f"인천-제주 노선 상공 항공기: {len(route_area)}대")
+    if len(route_area)>0:
+        print(route_area[['callsign','altitude_ft', 'velocity_knots', 'heading']])
+        print(f"\n평균 순항 고도: {route_area['altitude_ft'].mean():.0f} ft")
+        print(f"평균 속도: {route_area['velocity_knots'].mean():.0f} knots")
+
+# analyze_icn_cju_route()
+
+def get_incheon_flights(date: datetime) -> list:
+    """인천공항 하루치 출발 데이터 조회"""
+    
+    begin = int(date.timestamp())
+    end   = int((date + timedelta(days=1)).timestamp())
+    
+    url = "https://opensky-network.org/api/flights/departure"
+    params = {
+        "airport": "RKSI",
+        "begin": begin,
+        "end": end
+    }
+    
+    # 비회원은 요청 제한 있음 — 무료 계정 만들면 여유로워짐
+    resp = requests.get(url, params=params, timeout=30)
+    
+    if resp.status_code == 200:
+        return resp.json()
+    elif resp.status_code == 429:
+        print("Rate limit — 10초 대기")
+        time.sleep(10)
+        return get_incheon_flights(date)  # 재시도
+    else:
+        print(f"에러: {resp.status_code}")
+        return []
+
+# 사용 예시
+flights = get_incheon_flights(datetime(2024, 3, 1))
+print(flights[0])
