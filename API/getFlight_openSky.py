@@ -1,6 +1,6 @@
 import requests
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta
 import time
 from dotenv import load_dotenv
 import os
@@ -397,8 +397,7 @@ def get_incheon_flights(date: datetime) -> list:
         "end": end
     }
     
-    # 비회원은 요청 제한 있음 — 무료 계정 만들면 여유로워짐
-    resp = requests.get(url, params=params, timeout=30)
+    resp = requests.get(url, params=params, auth =(username, password), timeout=30)
     
     if resp.status_code == 200:
         return resp.json()
@@ -409,6 +408,20 @@ def get_incheon_flights(date: datetime) -> list:
     else:
         print(f"에러: {resp.status_code}")
         return []
+
+
+resp= requests.get(
+    "https://opensky-network.org/api/flights/departure",
+    params={
+        "airport": "RKSI",
+        "begin": 1709251200,
+        "end": 1709337600
+    },
+    auth=(username, password)
+)
+
+print(f"응답 상태: {resp.status_code}")
+print(resp.text[:500])  # 응답의 처음 500자 출력
 
 # 사용 예시
 flights = get_incheon_flights(datetime(2024, 3, 1))
